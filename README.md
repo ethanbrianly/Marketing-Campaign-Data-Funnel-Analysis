@@ -78,29 +78,24 @@ YouTube
 These platforms were compared using funnel activity, conversion rates, cost, revenue, and ROI to evaluate differences in advertising performance.
 
 ## Dashboard Features
-### Funnel & Campaign Performance
-Visualizes the complete marketing funnel from impressions to enrollments
-Displays key campaign metrics and conversion rates
-Highlights drop-offs between funnel stages
-Provides an overview of campaign performance and efficiency
-Audience, Region & Platform Analysis
-Breaks down campaign performance by target audience, region, and advertising platform
-Compares engagement and conversion across different segments
-Allows platform performance to be evaluated using both funnel and financial metrics
-###Interactive Filtering
-Allows users to filter results by campaign characteristics
-Supports filtering by platform, audience, region, campaign type, and date
-Updates dashboard visuals based on selected filters for more focused analysis
+### Marketing Funnel & Campaign Performance
+Built a dashboard tracking the marketing funnel from impressions and clicks to leads, applications, and enrollments.
+Used conversion rates to identify drop-offs between funnel stages and compare campaign performance.
+Compared campaign costs, revenue, and ROI to evaluate marketing efficiency.
+### Audience, Region & Platform Analysis
+Analyzed campaign performance across different audiences, regions, and advertising platforms.
+Compared engagement and conversion rates to identify differences in performance across segments.
+Used both funnel metrics and financial data to evaluate campaign effectiveness.
+### Interactive Filtering
+Added filters for platform, target audience, region, campaign type, and date.
+Enabled users to explore specific campaign segments and see how performance changed across different selections.'
 
 ## Key Insights
-High impression and click volume does not necessarily translate into strong enrollment performance.
-Conversion rates provide additional context when comparing campaigns with different levels of traffic.
-Campaign performance varies across target audiences, regions, and advertising platforms.
-Strong engagement at the beginning of the funnel does not always result in strong performance at later stages.
-Examining cost, revenue, and ROI alongside funnel metrics provides a more complete view of campaign efficiency.
-Analyzing the full funnel helps identify where potential customers are lost rather than focusing only on top-level engagement.
-Project Takeaways
+High impressions and clicks did not always lead to more enrollments.
+Conversion rates helped show how effectively campaigns moved potential customers through the funnel.
+Campaign performance varied across audiences, regions, and advertising platforms.
+Looking at ROI, revenue, and costs alongside engagement metrics provided a clearer picture of campaign effectiveness.
+Tracking the full funnel helped reveal where potential customers dropped off before enrollment.
 
-This project provided hands-on experience using SQL, Excel, and Power BI to analyze campaign data and present the results through an interactive dashboard.
-
-The analysis focused on moving beyond raw campaign totals by using conversion and financial metrics to compare performance across different campaigns and segments. This provided a more complete view of how marketing activity translated into applications and enrollments.
+## Project Takeaways
+I used SQL, Excel, and Power BI to analyze marketing campaign data and build an interactive dashboard. The project helped me practice comparing campaign performance using conversion rates and financial metrics rather than relying on impressions and clicks alone. It also gave me experience turning raw data into visualizations that make campaign trends and performance differences easier to understand.
