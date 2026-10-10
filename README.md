@@ -26,7 +26,7 @@ Region
 The dataset also includes additional campaign information such as campaign objectives, start and end dates, budget allocation, campaign type, creative type, marketing manager, channel, and conversion goal.
 Campaigns are distributed across platforms including Google Ads, Facebook, Instagram, LinkedIn, and YouTube, with regional and audience information available for comparison.
 
-Dataset: Marketing Campaign Dataset — Kaggle
+Dataset: Marketing Campaign Dataset - Kaggle
 
 ## Project Goals
 Analyze marketing funnel performance across campaigns
