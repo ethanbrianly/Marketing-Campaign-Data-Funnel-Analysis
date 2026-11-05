@@ -1,0 +1,59 @@
+SELECT
+    SUM(Impressions) AS total_impressions,
+    SUM(Clicks) AS total_clicks,
+    SUM(Leads) AS total_leads,
+    SUM(Applications) AS total_applications,
+    SUM(Enrollments) AS total_enrollments,
+    ROUND(SUM(Clicks) * 100.0 / SUM(Impressions), 2) AS impression_to_click_rate,
+    ROUND(SUM(Leads) * 100.0 / SUM(Clicks), 2) AS click_to_lead_rate,
+    ROUND(SUM(Applications) * 100.0 / SUM(Leads), 2) AS lead_to_application_rate,
+    ROUND(SUM(Enrollments) * 100.0 / SUM(Applications), 2) AS application_to_enrollment_rate
+FROM Marketing_Campaign_Data;
+
+SELECT
+  Platform,
+	COUNT(*) AS num_campaigns,
+  SUM(Impressions) AS impressions,
+  SUM(Clicks) AS clicks,
+	SUM(Leads) AS leads,
+	SUM(Applications) AS applications,
+  SUM(Enrollments) AS enrollments,
+	ROUND(SUM(Enrollments)/COUNT(*),2) AS enrollments_per_campaign,
+  ROUND(SUM(Clicks)*100.0/SUM(Impressions),2) AS ctr,
+  ROUND(SUM(Enrollments)*100.0/SUM(Clicks),2) AS conversion_rate,
+	ROUND(((SUM(Revenue)-SUM(Cost))/SUM(Cost))*100,2) AS roi_percent
+FROM Marketing_Campaign_Data
+GROUP BY Platform
+ORDER BY conversion_rate DESC;
+
+SELECT
+  TargetAudience,
+	COUNT(*) AS num_campaigns,
+  SUM(Impressions) AS impressions,
+  SUM(Clicks) AS clicks,
+	SUM(Leads) AS leads,
+	SUM(Applications) AS applications,
+  SUM(Enrollments) AS enrollments,
+	ROUND(SUM(Enrollments)/COUNT(*),2) AS enrollments_per_campaign,
+  ROUND(SUM(Clicks)*100.0/SUM(Impressions),2) AS ctr,
+  ROUND(SUM(Enrollments)*100.0/SUM(Clicks),2) AS conversion_rate,
+	ROUND(((SUM(Revenue)-SUM(Cost))/SUM(Cost))*100,2) AS roi_percent
+FROM Marketing_Campaign_Data
+GROUP BY TargetAudience
+ORDER BY TargetAudience ASC;
+
+SELECT
+  Region,
+	COUNT(*) AS num_campaigns,
+  SUM(Impressions) AS impressions,
+  SUM(Clicks) AS clicks,
+  SUM(Leads) AS leads,
+	SUM(Applications) AS applications,
+  SUM(Enrollments) AS enrollments,
+	ROUND(SUM(Enrollments)/COUNT(*),2) AS enrollments_per_campaign,
+  ROUND(SUM(Clicks)*100.0/SUM(Impressions),2) AS ctr,
+  ROUND(SUM(Enrollments)*100.0/SUM(Clicks),2) AS conversion_rate,
+	ROUND(((SUM(Revenue)-SUM(Cost))/SUM(Cost))*100,2) AS roi_percent
+FROM Marketing_Campaign_Data
+GROUP BY Region
+ORDER BY conversion_rate ASC;
